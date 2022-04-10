@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #D69493;
+    --secondary-color: #ACC2AB;
+    --accent-color: #B88798;
+    --text-color: #5A2837;
+    --background-color: #E5C08C;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: #d6a5a5;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar-brand:hover {
+    color: rgb(223, 213, 213);
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+.nav-item {
+    color: white;
+}
+
+.nav-item .nav-link-active {
+    color:#ACC2AB;
+}
+
+.nav-item:hover {
+    color: rgb(223, 213, 213);
+    cursor: pointer;
+}
+
+.hero {
+    padding: 30px;
+    background: var(--primary-color);
+    color: white;
+    background-image: url(/src/hero-background-alice.png);
+    background-size: cover;
+}
+
+.hero img {
+    border-radius: 360px;
+    border: 8px solid var(--secondary-color);
+    max-width: 250px;
+}
+
+.hero {
+    font-family: 'Qwigley', cursive;
+}
+
+.hero h1 {
+    font-size: 90px;
+    line-height: 1;
+}
+
+.hero h2 {
+    font-size: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 28px;
+    border-radius: 20px;
+    border: none;
+    transition: 300ms all ease-in-out;
+    box-shadow: 2px 2px 2px #5a283744;
+}
+
+.hero button:hover {
+    background-color: #d6a5a5;
+    box-shadow: none;
+}
+
+.subsection-header {
+    padding: 20px;
+    background-color: #889987;
+    color: white;
+}
+
+.frame img {
+    border: 10px solid #889987;
+    background-color: #889987;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.contact-method a {
+    font-size: 24px;
+    color: white;
+    transition: 200ms all ease-in-out;
+}
+
+.contact-method a:hover {
+    color:#5a283744;
+}
+
+.rotate {
+    transition: 1s;
+}
+
+.rotate:hover {
+    transform: rotateY(360deg);
+}
