@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
-    <link href="/src/styles.css" rel="stylesheet">
+    <link href="/sass/main.css" rel="stylesheet">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"
     ></script>
@@ -24,75 +24,18 @@
     <script src="/src/script.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg pt-2 ps-3">
-        <a class="navbar-brand" href="#">
-            A&M
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Creations</a>
-            <a class="nav-item nav-link" href="#">Get in touch</a>
-            </div>
-        </div>
-    </nav>
-      <div class="container-fluid hero">
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <img src="/src/A&M-logo.jpg" />
-            </div>
-            <div class="col-lg-9">
-                <h1>Alice & Maple</h1>
-                <h2>Artisan knitwear from the Yorkshire coast</h2>
-                <div class="d-inline">
-                <button class="pt-2 pb-1 pe-3 ps-3 me-4">Discover the A&M world</button>
-                <button class="pt-2 pb-1 pe-3 ps-3">Get in touch</button>
-                </div>
-            </div>
-        </div>
+    <div class="container-main-grid">
+      <div class="container-main-grid__header header">Header</div>
+      <div class="container-main-grid__item--2">Hello</div>
+      <div class="container-main-grid__item--3">Hello</div>
+      <div class="container-main-grid__item--4">Hello</div>
+      <div class="container-main-grid__item--5">Hello</div>
+      <div class="container-main-grid__item--6">Hello</div>
+      <div class="container-main-grid__item--7">Hello</div>
+      <div class="container-main-grid__item--8">Hello</div>
+      <div class="container-main-grid__item--9">Hello</div>
+      <div class="container-main-grid__item--10">Hello</div>
     </div>
-    <h2 class="text-center subsection-header">Check out our latest creations below</h2>
-    <div class="row d-flex justify-content-between">
-        <div class="m-3 frame">
-        <img src="/src/Alice-img-1.jpg" class="img-fluid" />
-        </div>
-        <div class="m-3 frame">
-        <img src="/src/Alice-img-2.jpg" class="img-fluid rounded" />
-        </div>
-        <div class="m-3 frame">
-        <img src="/src/Alice-img-3.jpg" class="img-fluid rounded" />
-        </div>
-        <div class="m-3 frame">
-        <img src="/src/Alice-img-4.jpg" class="img-fluid rounded" />
-        </div>
-    </div>
-    <br />
-    <footer class="text-center">
-        <div class="d-flex justify-content-evenly">
-          <div class="contact-method">
-            <a href="https://www.instagram.com/alice.and.maple" target="blank"><i class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-          <div class="contact-method">
-            <a href="https://www.facebook.com/alice.and.maple" target="blank"><i class="fa-brands fa-facebook"></i>
-              </a>
-          </div>
-          <div class="contact-method">
-            <a href="mailto:h.r.heslop@gmail.com" target="blank"><i class="fa-solid fa-envelope" title="email-logo"></i>
-              </a>
-          </div>
-        </div>
-        <br />
-      Coded by H. R. Tagliarini and hosted on Netlify.
-      <div class="text-center rotate">
-        <a href="https://zealous-saha-548ec2.netlify.app" target="blank">
-            <img src="/src/helen-tagliarini-logo.jpg" />
-        </a>
-      </div>
-  </footer>
+    <img src="/img/A&M-logo.jpg">
   </body>
 </html>
