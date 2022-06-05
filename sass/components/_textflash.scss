@@ -1,0 +1,18 @@
+.textflash {
+    &__title {
+        padding-bottom: 6rem;
+        font-family: $font-display-heading;
+        font-size: 6rem;
+    }
+
+    &__content {
+        font-size: 2rem;
+        font-family: $font-content;
+    }
+
+    &__close {
+        padding-top: 7rem;
+        font-family: $font-display-heading;
+        font-size: 6rem;
+    }
+}

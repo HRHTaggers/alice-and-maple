@@ -1,0 +1,21 @@
+.testimonial-content {
+    &__list {
+        padding: 6rem 7rem;
+        list-style: none;
+    }
+
+    &__quotation {
+        font-size: 3rem;
+    }
+
+    &__date {
+        padding-top: 2rem;
+        font-size: 1.8rem; 
+    }
+
+    &__image--photo {
+    width: 30rem;
+    box-shadow: 0 0 2px black;
+    border-radius: 50%;
+  }
+}

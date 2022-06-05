@@ -11,5 +11,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    line-height: 4rem;
+    font-family: $font-display-subheading;
+    position: relative;
+    text-align: center;
 }

@@ -1,0 +1,23 @@
+.container-mini-grid {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 33% 33% 33%;
+  padding: 6rem ;
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-text-dark;
+
+  &__image {
+    height: 36rem;
+    margin: 3rem 0 4rem;
+    box-shadow: 0 0 2px black;
+    border-radius: 50%;
+  }
+
+  &__priceband {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}

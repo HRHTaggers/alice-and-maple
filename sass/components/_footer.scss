@@ -1,0 +1,47 @@
+.footer {
+    padding: 4rem;
+    color: $color-text-light;
+
+    &__main-content {
+        padding: 4rem 0 6rem 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        &--contact-method {
+            font-size: 3rem;
+            transition: $default-transition-quick;
+
+            &:hover {
+                color: $color-text-medium;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__company-info {
+        &--company-title {
+            font-family: $font-display-heading;
+            font-size: 3rem;
+            letter-spacing: 1.25rem;
+        }
+
+        &--company-location {
+            font-size: 2rem;
+        }
+    }
+
+    &__attribution {
+        padding-top: 3rem;
+
+        &--logo {
+            height: 5rem;
+            transition: $default-transition-quick;
+
+            &:hover {
+                transform: rotateY(180deg);
+
+                @include clearfix;
+            }
+        }
+    }
+}

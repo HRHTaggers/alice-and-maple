@@ -1,0 +1,16 @@
+.heading-primary {
+    &__main {
+        font-family: $font-display-heading;
+        font-size: 8rem;
+        line-height: 12rem;
+        letter-spacing: 3.33333rem;
+        text-align: left;
+    }
+
+    &__sub {
+        font-family: $font-display-heading;
+        font-size: 2.5rem;
+        letter-spacing: 0.23rem;
+        text-align: left;
+    }
+}

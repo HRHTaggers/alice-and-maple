@@ -1,0 +1,28 @@
+.sidebar {
+  li {
+    list-style: none;
+    padding: 1rem 0;
+    text-align: left;
+
+    font-size: 1.8rem;
+  }
+
+  &__menu-item {
+    list-style: none;
+
+    &--active {
+      font-weight: 600;
+    }
+
+    &--link {
+      color: $color-text-light;
+      text-decoration: none;
+      transition: all 100ms ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-text-medium;
+      }
+    }
+  }
+}
