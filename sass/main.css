@@ -183,6 +183,12 @@ body {
   background-color: #ae8787;
 }
 
+.sidebar {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
+}
+
 .sidebar li {
   list-style: none;
   padding: 1rem 0;
