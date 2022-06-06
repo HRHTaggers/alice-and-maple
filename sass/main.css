@@ -18,6 +18,16 @@ body {
   text-align: center;
 }
 
+::-moz-selection {
+  background-color: #ae8787;
+  color: #eeeeee;
+}
+
+::selection {
+  background-color: #ae8787;
+  color: #eeeeee;
+}
+
 .heading-primary__main {
   font-family: "Cinzel Decorative", cursive;
   font-size: 8rem;
@@ -54,9 +64,10 @@ body {
   display: inline-block;
   padding: 1.5rem 2rem;
   border-radius: 20px;
-  background-color: #d6a5a5;
-  -webkit-box-shadow: 0.5px 0.5px 2px #607979;
-          box-shadow: 0.5px 0.5px 2px #607979;
+  background: -webkit-gradient(linear, left top, right bottom, from(#d6a5a5), to(#ae8787));
+  background: linear-gradient(to bottom right, #d6a5a5, #ae8787);
+  -webkit-box-shadow: 0.5px 0.5px 2px #8cb1b1;
+          box-shadow: 0.5px 0.5px 2px #8cb1b1;
   color: #eeeeee;
   font-size: 2rem;
   -webkit-transition: 100ms all ease-in-out;
@@ -66,7 +77,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #c69999;
+  background: -webkit-gradient(linear, left top, right bottom, from(#c69999), to(#ae8787));
+  background: linear-gradient(to bottom right, #c69999, #ae8787);
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #eeeeee;
@@ -81,21 +93,13 @@ body {
 .contact__content {
   font-family: "Joan", serif;
   margin-bottom: 7rem;
-  font-size: 1.75rem;
-}
-
-.contact__image--shop {
-  height: 28rem;
-  margin: 3rem 0 4rem;
-  -webkit-box-shadow: 0 0 2px black;
-          box-shadow: 0 0 2px black;
-  border-radius: 50%;
+  font-size: 1.9rem;
 }
 
 .contact__button {
   padding: 1rem 1.5rem;
   border-radius: 20px;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   -webkit-transition: 100ms all ease-in-out;
   transition: 100ms all ease-in-out;
   text-decoration: none;
@@ -187,17 +191,23 @@ body {
   position: fixed;
   top: 2rem;
   left: 1rem;
+  font-size: 1.8rem;
 }
 
 .sidebar li {
   list-style: none;
   padding: 1rem 0;
   text-align: left;
-  font-size: 1.8rem;
 }
 
 .sidebar__menu-item {
   list-style: none;
+}
+
+.sidebar__menu-item--return-to-top {
+  position: fixed;
+  bottom: 2rem;
+  left: 3rem;
 }
 
 .sidebar__menu-item--active {
@@ -216,18 +226,26 @@ body {
   color: #a4a4a4;
 }
 
-.testimonial-content__list {
-  padding: 6rem 7rem;
+.testimonial-content__list-1, .testimonial-content__list-2 {
   list-style: none;
+}
+
+.testimonial-content__list-1 {
+  padding: 6rem 12rem 0 12rem;
+}
+
+.testimonial-content__list-2 {
+  padding: 0 12rem;
 }
 
 .testimonial-content__quotation {
   font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .testimonial-content__date {
-  padding-top: 2rem;
   font-size: 1.8rem;
+  color: #a4a4a4;
 }
 
 .testimonial-content__image--photo {
@@ -237,13 +255,28 @@ body {
   border-radius: 50%;
 }
 
-.container-grid-testimonial {
+.container-grid-testimonial-1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   -ms-grid-columns: 33% 66%;
       grid-template-columns: 33% 66%;
+  padding-bottom: 4rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-grid-testimonial-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 66% 33%;
+      grid-template-columns: 66% 33%;
+  padding-bottom: 4rem;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -253,8 +286,8 @@ body {
 .container-main-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 67rem 8rem 60rem 80rem 8rem 40rem 8rem 60rem 40rem (1fr)[3];
-      grid-template-rows: 67rem 8rem 60rem 80rem 8rem 40rem 8rem 60rem 40rem repeat(3, 1fr);
+  -ms-grid-rows: 67rem 8rem 60rem 74rem 8rem 50rem 8rem 60rem 40rem (1fr)[3];
+      grid-template-rows: 67rem 8rem 60rem 74rem 8rem 50rem 8rem 60rem 40rem repeat(3, 1fr);
   -ms-grid-columns: 12vw (1fr)[3];
       grid-template-columns: 12vw repeat(3, 1fr);
 }
@@ -352,16 +385,16 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8))), url(/img/christening-candles.png);
-  background: linear-gradient(rgba(206, 221, 221, 0.8)), url(/img/christening-candles.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8))), url(/img/christening-candles-light.png);
+  background: linear-gradient(rgba(206, 221, 221, 0.8)), url(/img/christening-candles-light.png);
   background-size: 100%;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
 }
 
 .container-main-grid__shop:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6))), url(/img/christening-candles.png);
-  background: linear-gradient(rgba(206, 221, 221, 0.6)), url(/img/christening-candles.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6))), url(/img/christening-candles-light.png);
+  background: linear-gradient(rgba(206, 221, 221, 0.6)), url(/img/christening-candles-light.png);
   background-size: 102%;
 }
 
@@ -413,6 +446,13 @@ body {
   background-color: #d6a5a5;
 }
 
+.container-main-grid__test-carousel {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 1;
+  grid-row: 11 / 12;
+  grid-column: 2 / -1;
+}
+
 .container-mini-grid {
   display: -ms-grid;
   display: grid;
@@ -433,10 +473,30 @@ body {
   -webkit-box-shadow: 0 0 2px black;
           box-shadow: 0 0 2px black;
   border-radius: 50%;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.container-mini-grid__image:hover {
+  height: 36.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .container-mini-grid__priceband {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.carousel-item {
+  padding: 4rem 6rem;
+}
+
+.carousel-image__photo {
+  margin-bottom: 2rem;
+  height: 20rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 2px #8cb1b1;
+          box-shadow: 0 0 2px #8cb1b1;
 }
 /*# sourceMappingURL=main.css.map */

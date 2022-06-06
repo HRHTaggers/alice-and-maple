@@ -1,16 +1,25 @@
 .testimonial-content {
-    &__list {
-        padding: 6rem 7rem;
+    &__list-1,
+    &__list-2 {
         list-style: none;
+    }
+
+    &__list-1 {
+        padding: 6rem 12rem 0 12rem;
+    }
+
+    &__list-2 {
+        padding: 0 12rem;
     }
 
     &__quotation {
         font-size: 3rem;
+        padding-bottom: 2rem;
     }
 
     &__date {
-        padding-top: 2rem;
         font-size: 1.8rem; 
+        color: $color-text-medium;
     }
 
     &__image--photo {

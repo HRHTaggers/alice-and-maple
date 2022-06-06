@@ -15,3 +15,8 @@ body {
     position: relative;
     text-align: center;
 }
+
+::selection {
+    background-color: $color-primary-dark;
+    color: $color-text-light;
+}

@@ -2,17 +2,23 @@
   position: fixed;
   top: 2rem;
   left: 1rem;
+
+  font-size: 1.8rem;
   
   li {
     list-style: none;
     padding: 1rem 0;
     text-align: left;
-
-    font-size: 1.8rem;
   }
 
   &__menu-item {
     list-style: none;
+
+    &--return-to-top {
+      position: fixed;
+      bottom: 2rem;
+      left: 3rem;
+    }
 
     &--active {
       font-weight: 600;

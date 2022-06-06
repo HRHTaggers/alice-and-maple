@@ -1,7 +1,18 @@
-.container-grid-testimonial {
+.container-grid-testimonial-1 {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 33% 66%;
+  padding-bottom: 4rem;
+
+  text-align: center;
+  align-items: center;
+}
+
+.container-grid-testimonial-2 {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 66% 33%;
+  padding-bottom: 4rem;
 
   text-align: center;
   align-items: center;

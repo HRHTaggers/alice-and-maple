@@ -14,6 +14,12 @@
     margin: 3rem 0 4rem;
     box-shadow: 0 0 2px black;
     border-radius: 50%;
+    transition: $default-transition-medium;
+
+    &:hover {
+        height: 36.5rem;
+        box-shadow: none;
+    }
   }
 
   &__priceband {
