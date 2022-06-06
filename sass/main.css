@@ -11,6 +11,18 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 48.68em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 35.1em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Cinzel", serif;
@@ -81,6 +93,7 @@ body {
   background: linear-gradient(to bottom right, #c69999, #ae8787);
   -webkit-box-shadow: none;
           box-shadow: none;
+  text-decoration: none;
   color: #eeeeee;
 }
 
@@ -223,23 +236,25 @@ body {
 
 .sidebar__menu-item--link:hover {
   cursor: pointer;
+  text-decoration: none;
   color: #a4a4a4;
 }
 
-.testimonial-content__list-1, .testimonial-content__list-2 {
-  list-style: none;
-}
-
 .testimonial-content__list-1 {
-  padding: 6rem 12rem 0 12rem;
+  padding: 4rem 12rem 0 12rem;
 }
 
-.testimonial-content__list-2 {
-  padding: 0 12rem;
+.testimonial-content__stars {
+  padding-top: 3rem;
+}
+
+.testimonial-content__stars, .testimonial-content__review {
+  font-size: 3rem;
+  color: #8cb1b1;
 }
 
 .testimonial-content__quotation {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 2rem;
 }
 
@@ -286,8 +301,8 @@ body {
 .container-main-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 67rem 8rem 60rem 74rem 8rem 50rem 8rem 60rem 40rem (1fr)[3];
-      grid-template-rows: 67rem 8rem 60rem 74rem 8rem 50rem 8rem 60rem 40rem repeat(3, 1fr);
+  -ms-grid-rows: 67rem 8rem 60rem 74rem 8rem 56rem 8rem 60rem 40rem (1fr)[3];
+      grid-template-rows: 67rem 8rem 60rem 74rem 8rem 56rem 8rem 60rem 40rem repeat(3, 1fr);
   -ms-grid-columns: 12vw (1fr)[3];
       grid-template-columns: 12vw repeat(3, 1fr);
 }
@@ -489,7 +504,7 @@ body {
 }
 
 .carousel-item {
-  padding: 4rem 6rem;
+  padding: 2rem 6rem;
 }
 
 .carousel-image__photo {

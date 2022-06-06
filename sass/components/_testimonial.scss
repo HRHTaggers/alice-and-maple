@@ -1,19 +1,21 @@
 .testimonial-content {
-    &__list-1,
-    &__list-2 {
-        list-style: none;
-    }
 
     &__list-1 {
-        padding: 6rem 12rem 0 12rem;
+        padding: 4rem 12rem 0 12rem;
     }
 
-    &__list-2 {
-        padding: 0 12rem;
+    &__stars {
+        padding-top: 3rem;
+    }
+
+    &__stars,
+    &__review {
+        font-size: 3rem;
+        color: $color-accent;
     }
 
     &__quotation {
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding-bottom: 2rem;
     }
 
