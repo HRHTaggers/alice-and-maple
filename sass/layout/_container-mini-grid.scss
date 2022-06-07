@@ -9,6 +9,14 @@
   font-weight: 600;
   color: $color-text-dark;
 
+  @include respond(small-desk) {
+      padding: 6rem 2rem;
+  }
+
+  @include respond(mini-desk) {
+      font-size: 1.8rem;
+  }
+
   &__image {
     height: 36rem;
     margin: 3rem 0 4rem;
@@ -16,14 +24,34 @@
     border-radius: 50%;
     transition: $default-transition-medium;
 
+    @include respond(small-desk) {
+        height: 28rem;
+    }
+
+    @include respond(mini-desk) {
+        height: 22rem;
+    }
+
     &:hover {
         height: 36.5rem;
         box-shadow: none;
+
+        @include respond(small-desk) {
+            height: 28.5rem;
+        }
+
+        @include respond(mini-desk) {
+            height: 22.5rem;
+        }
     }
   }
 
   &__priceband {
     font-size: 1.5rem;
     font-weight: 400;
+
+    @include respond(mini-desk) {
+      font-size: 1.3rem;
+    }
   }
 }

@@ -3,16 +3,44 @@
         padding-bottom: 6rem;
         font-family: $font-display-heading;
         font-size: 6rem;
+
+        @include respond(small-desk) {
+            font-size: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        @include respond(mini-desk) {
+            font-size: 3.5rem;
+            padding-bottom: 3.5rem;
+        }
     }
 
     &__content {
         font-size: 2rem;
         font-family: $font-content;
+
+        @include respond(small-desk) {
+            font-size: 1.7rem;
+        }
+
+        @include respond(mini-desk) {
+            font-size: 1.7rem;
+        }
     }
 
     &__close {
         padding-top: 7rem;
         font-family: $font-display-heading;
         font-size: 6rem;
+
+        @include respond(small-desk) {
+            padding-top: 5rem;
+            font-size: 5rem;
+        }
+
+        @include respond(mini-desk) {
+            padding-top: 4rem;
+            font-size: 3.5rem;
+        }
     }
 }

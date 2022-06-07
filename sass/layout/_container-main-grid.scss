@@ -1,10 +1,32 @@
 .container-main-grid {
   display: grid;
-  grid-template-rows: 67rem 8rem 60rem 74rem 8rem 56rem 8rem 60rem 40rem repeat(
-      3,
-      1fr
-    );
+  grid-template-rows: 67rem 8rem min-content min-content 8rem 56rem 8rem 60rem min-content;
   grid-template-columns: 12vw repeat(3, 1fr);
+
+    @include respond(small-desk) {
+        grid-template-rows: 60rem 6rem min-content min-content 6rem 56rem 6rem 60rem min-content;
+        grid-template-columns: 16vw repeat(3, 1fr);
+    }
+
+    @include respond(mini-desk) {
+        grid-template-rows: 60rem 6rem min-content min-content 6rem 56rem 6rem 60rem min-content;
+        grid-template-columns: 16vw repeat(3, 1fr);
+    }
+
+    @include respond(tab-land) {
+        grid-template-rows: 60rem 6rem min-content min-content 6rem min-content 6rem 60rem min-content;
+        grid-template-columns: 15vw repeat(3, 1fr);
+    }
+
+    @include respond(tab-port) {
+        grid-template-rows: 60rem 6rem min-content min-content 6rem min-content 6rem 60rem min-content;
+        grid-template-columns: 15vw repeat(3, 1fr);
+    }
+
+    @include respond(phone) {
+        grid-template-rows: 67rem 8rem min-content min-content 8rem 56rem 8rem 60rem min-content;
+        grid-template-columns: 12vw repeat(3, 1fr);
+    }
 
   &__header {
     grid-row: 1 / 2;
@@ -16,12 +38,24 @@
         rgba($color-primary-light, 0.45)
       ),
       url(/img/candle-image-1.jpg);
-    background-size: 100vw;
+    background-size: cover;
     background-position-x: 50%;
     background-position-y: 70%;
     color: $color-text-light;
 
     padding: 20vh 10vw;
+
+    @include respond(small-desk) {
+        padding: 20vh 8vw;
+    }
+
+    @include respond(mini-desk) {
+        padding: 12vh 6vw;
+    }
+
+    @include respond(tab-land) {
+        padding: 12vh 8vw;
+    }
   }
 
   &__sidebar {
@@ -30,7 +64,7 @@
     background-color: $color-accent-dark;
     color: $color-text-light;
 
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
   &__cta {
@@ -47,6 +81,11 @@
     padding-top: 2rem;
     font-size: 3rem;
     color: $color-text-dark;
+
+    @include respond(small-desk) {
+        padding-top: 1.3rem;
+        font-size: 2.5rem;
+    }
   }
 
   &__bestsellers-gallery {
@@ -85,7 +124,7 @@
   &__shop,
   &__message,
   &__follow {
-    padding: 12rem 6rem;
+    padding: 12rem 2rem;
   }
 
   &__shop {
@@ -96,10 +135,18 @@
     background-size: 100%;
     transition: $default-transition-medium;
 
+    @include respond(small-desk) {
+        background-size: 150%;
+    }
+
     &:hover {
       background: linear-gradient(rgba($color-accent-light-2, 0.6)),
         url(/img/christening-candles-light.png);
       background-size: 102%;
+
+      @include respond(small-desk) {
+        background-size: 152%;
+        }
     }
   }
 
@@ -111,10 +158,18 @@
     background-size: 100%;
     transition: $default-transition-medium;
 
+    @include respond(small-desk) {
+        background-size: 150%;
+    }
+
     &:hover {
       background: linear-gradient(rgba($color-accent-light-2, 0.6)),
         url(/img/cherry-blossom.jpg);
       background-size: 102%;
+
+      @include respond(small-desk) {
+        background-size: 152%;
+        }
     }
   }
 
@@ -126,10 +181,18 @@
     background-size: 100%;
     transition: $default-transition-medium;
 
+    @include respond(small-desk) {
+        background-size: 150%;
+    }
+
     &:hover {
       background: linear-gradient(rgba($color-accent-light-2, 0.6)),
         url(/img/header-background-image.jpg);
       background-size: 102%;
+
+      @include respond(small-desk) {
+        background-size: 152%;
+        }
     }
   }
 

@@ -5,6 +5,16 @@
         line-height: 12rem;
         letter-spacing: 3.33333rem;
         text-align: left;
+
+        @include respond(small-desk){
+            font-size: 7rem;
+            line-height: 12rem;
+        }
+
+        @include respond(mini-desk){
+            font-size: 6rem;
+            line-height: 9rem;
+        }
     }
 
     &__sub {
@@ -12,5 +22,13 @@
         font-size: 2.5rem;
         letter-spacing: 0.23rem;
         text-align: left;
+
+        @include respond(small-desk){
+            font-size: 2.3rem;
+        }
+
+        @include respond(mini-desk){
+            font-size: 2rem;
+        }
     }
 }

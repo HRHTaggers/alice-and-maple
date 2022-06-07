@@ -1,14 +1,23 @@
 .sidebar {
   position: fixed;
   top: 2rem;
-  left: 1rem;
+  left: 0;
 
   font-size: 1.8rem;
-  
-  li {
+
+  @include respond(small-desk) {
+    left: 0;
+    font-size: 1.5rem;
+  }
+
+  & li {
     list-style: none;
-    padding: 1rem 0;
+    padding: 1.5rem 1rem;
     text-align: left;
+
+    @include respond(small-desk) {
+      padding: 1.5rem 0;
+    }
   }
 
   &__menu-item {
@@ -18,6 +27,11 @@
       position: fixed;
       bottom: 2rem;
       left: 3rem;
+
+      @include respond(small-desk) {
+        left: 2rem;
+        font-size: 1.2rem;
+      }
     }
 
     &--active {
