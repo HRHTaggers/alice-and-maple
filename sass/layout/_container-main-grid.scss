@@ -179,7 +179,7 @@
   &__shop {
     grid-row: 8 / 9;
     grid-column: 2 / 3;
-    background: linear-gradient(to bottom, rgba($color-accent-light-2, 0.6), rgba($color-accent-light-2, 1)),
+    background: linear-gradient(to bottom, rgba($color-accent-light-2, 0.6), $color-accent-light-2),
       url(/img/christening-candles-light.png);
     background-size: 100%;
     transition: $default-transition-medium;
