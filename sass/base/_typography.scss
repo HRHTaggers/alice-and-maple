@@ -15,6 +15,14 @@
             font-size: 6rem;
             line-height: 9rem;
         }
+
+        @include respond(phone){
+            padding-bottom: 2rem;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: 1.5rem;
+            text-align: center;
+        }
     }
 
     &__sub {
@@ -29,6 +37,13 @@
 
         @include respond(mini-desk){
             font-size: 2rem;
+        }
+
+        @include respond(phone){
+            font-size: 2.5rem;
+            line-height: 4rem;
+            letter-spacing: 0.3rem;
+            text-align: center;
         }
     }
 }

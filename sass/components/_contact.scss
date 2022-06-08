@@ -9,6 +9,10 @@
         @include respond(mini-desk) {
             font-size: 3rem;
         }
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__content {
@@ -19,6 +23,10 @@
 
         @include respond(mini-desk) {
             font-size: 1.7rem;
+        }
+
+        @include respond(phone) {
+            margin-bottom: 3rem;
         }
     }
 

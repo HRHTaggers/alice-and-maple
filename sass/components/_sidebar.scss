@@ -10,6 +10,13 @@
     font-size: 1.5rem;
   }
 
+  @include respond(phone) {
+    top: 1rem;
+    left: 0;
+    display: flex;
+    font-size: 1.2rem;
+  }
+
   & li {
     list-style: none;
     padding: 1.5rem 1rem;
@@ -18,36 +25,52 @@
     @include respond(small-desk) {
       padding: 1.5rem 0;
     }
+
+    @include respond(phone) {
+      padding: 1rem 1.2rem;
+      background-color: $color-accent-dark;
+      border: 4px 4px 4px $color-accent-dark;
+
+      text-align: center;
+    }
   }
 
   &__menu-item {
-    list-style: none;
 
-    &--return-to-top {
-      position: fixed;
-      bottom: 2rem;
-      left: 3rem;
+      &--return-to-top {
+        position: fixed;
+        bottom: 2rem;
+        left: 3rem;
+        padding: 1rem 2rem;
+        background-color: rgba($color-accent, 0.7);
+        border-radius: 50%;
 
-      @include respond(small-desk) {
-        left: 2rem;
-        font-size: 1.2rem;
+        @include respond(small-desk) {
+          left: 2rem;
+          font-size: 2rem;
+        }
+
+
+        &:hover {
+          background-color: rgba($color-accent, 0.9);
+          color: $color-text-light;
+        }
       }
-    }
 
-    &--active {
-      font-weight: 600;
-    }
+      &--active {
+        font-weight: 600;
+      }
 
-    &--link {
-      color: $color-text-light;
-      text-decoration: none;
-      transition: all 100ms ease-in-out;
-
-      &:hover {
-        cursor: pointer;
+      &--link {
+        color: $color-text-light;
         text-decoration: none;
-        color: $color-text-medium;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: none;
+          color: $color-text-medium;
+        }
       }
     }
   }
-}

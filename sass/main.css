@@ -62,6 +62,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .heading-primary__main {
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 1.5rem;
+    text-align: center;
+  }
+}
+
 .heading-primary__sub {
   font-family: "Cinzel Decorative", cursive;
   font-size: 2.5rem;
@@ -78,6 +88,15 @@ body {
 @media only screen and (max-width: 60rem) {
   .heading-primary__sub {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .heading-primary__sub {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
   }
 }
 
@@ -98,6 +117,13 @@ body {
   .textflash__title {
     font-size: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .textflash__title {
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -138,6 +164,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .textflash__close {
+    font-size: 3rem;
+  }
+}
+
 .btn-primary {
   display: inline-block;
   padding: 1.5rem 2rem;
@@ -174,6 +206,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .contact__title {
+    margin-bottom: 2rem;
+  }
+}
+
 .contact__content {
   font-family: "Joan", serif;
   margin-bottom: 7rem;
@@ -183,6 +221,12 @@ body {
 @media only screen and (max-width: 60rem) {
   .contact__content {
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .contact__content {
+    margin-bottom: 3rem;
   }
 }
 
@@ -247,10 +291,22 @@ body {
   padding-top: 3rem;
 }
 
+@media only screen and (max-width: 27em) {
+  .footer__attribution {
+    font-size: 1.4rem;
+  }
+}
+
 .footer__attribution--logo {
   height: 5rem;
   -webkit-transition: 100ms all ease-in-out;
   transition: 100ms all ease-in-out;
+}
+
+@media only screen and (max-width: 27em) {
+  .footer__attribution--logo {
+    height: 4rem;
+  }
 }
 
 .footer__attribution--logo:hover {
@@ -285,6 +341,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .homepage-logo {
+    display: none;
+  }
+}
+
 .homepage-logo:hover {
   cursor: pointer;
   background-color: #ae8787;
@@ -304,6 +366,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .sidebar {
+    top: 1rem;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.2rem;
+  }
+}
+
 .sidebar li {
   list-style: none;
   padding: 1.5rem 1rem;
@@ -316,21 +389,34 @@ body {
   }
 }
 
-.sidebar__menu-item {
-  list-style: none;
+@media only screen and (max-width: 27em) {
+  .sidebar li {
+    padding: 1rem 1.2rem;
+    background-color: #607979;
+    border: 4px 4px 4px #607979;
+    text-align: center;
+  }
 }
 
 .sidebar__menu-item--return-to-top {
   position: fixed;
   bottom: 2rem;
   left: 3rem;
+  padding: 1rem 2rem;
+  background-color: rgba(140, 177, 177, 0.7);
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 76rem) {
   .sidebar__menu-item--return-to-top {
     left: 2rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
+}
+
+.sidebar__menu-item--return-to-top:hover {
+  background-color: rgba(140, 177, 177, 0.9);
+  color: #eeeeee;
 }
 
 .sidebar__menu-item--active {
@@ -530,13 +616,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 23.4em) {
+@media only screen and (max-width: 27em) {
   .container-main-grid {
-    -ms-grid-rows: 67rem 8rem min-content min-content 8rem 56rem 8rem 60rem min-content;
-        grid-template-rows: 67rem 8rem -webkit-min-content -webkit-min-content 8rem 56rem 8rem 60rem -webkit-min-content;
-        grid-template-rows: 67rem 8rem min-content min-content 8rem 56rem 8rem 60rem min-content;
-    -ms-grid-columns: 12vw (1fr)[3];
-        grid-template-columns: 12vw repeat(3, 1fr);
+    -ms-grid-rows: 8rem 50rem 6rem min-content min-content 6rem min-content 6rem min-content min-content min-content min-content;
+        grid-template-rows: 8rem 50rem 6rem -webkit-min-content -webkit-min-content 6rem -webkit-min-content 6rem -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 8rem 50rem 6rem min-content min-content 6rem min-content 6rem min-content min-content min-content min-content;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -573,14 +659,36 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__header {
+    padding-top: 12vh;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    background-position: center;
+  }
+}
+
 .container-main-grid__sidebar {
   grid-row: 1 / -1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
+  z-index: 200;
   background-color: #607979;
   color: #eeeeee;
   padding: 2rem 0;
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    padding: 0;
+  }
 }
 
 .container-main-grid__cta {
@@ -588,6 +696,15 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   grid-column: 2 / -1;
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__cta {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
 }
 
 .container-main-grid__cta, .container-main-grid__contact-cta, .container-main-grid__testimonial-cta {
@@ -613,6 +730,15 @@ body {
   background: #eeeeee;
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__bestsellers-gallery {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+  }
+}
+
 .container-main-grid__about {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
@@ -625,6 +751,16 @@ body {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__about {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    padding: 6rem 4rem;
+  }
+}
+
 .container-main-grid__contact-cta {
   -ms-grid-row: 7;
   -ms-grid-row-span: 1;
@@ -632,11 +768,29 @@ body {
   grid-column: 2 / -1;
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__contact-cta {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8 / 9;
+    grid-column: 1 / -1;
+  }
+}
+
 .container-main-grid__testimonial-cta {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5 / 6;
   grid-column: 2 / -1;
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__testimonial-cta {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
+  }
 }
 
 .container-main-grid__testimonial-content {
@@ -647,8 +801,23 @@ body {
   background-color: #eeeeee;
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__testimonial-content {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
+    grid-column: 1 / -1;
+  }
+}
+
 .container-main-grid__shop, .container-main-grid__message, .container-main-grid__follow {
   padding: 12rem 2rem;
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__shop, .container-main-grid__message, .container-main-grid__follow {
+    padding: 6rem 2rem;
+  }
 }
 
 .container-main-grid__shop {
@@ -658,8 +827,8 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8))), url(/img/christening-candles-light.png);
-  background: linear-gradient(rgba(206, 221, 221, 0.8)), url(/img/christening-candles-light.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(#cedddd)), url(/img/christening-candles-light.png);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), #cedddd), url(/img/christening-candles-light.png);
   background-size: 100%;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
@@ -671,15 +840,33 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__shop {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-row: 9 / 10;
+    grid-column: 1 / -1;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
 .container-main-grid__shop:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6))), url(/img/christening-candles-light.png);
-  background: linear-gradient(rgba(206, 221, 221, 0.6)), url(/img/christening-candles-light.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/christening-candles-light.png);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/christening-candles-light.png);
   background-size: 102%;
 }
 
 @media only screen and (max-width: 76rem) {
   .container-main-grid__shop:hover {
     background-size: 152%;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__shop:hover {
+    background-size: 102%;
+    background-position: center;
   }
 }
 
@@ -690,8 +877,8 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8))), url(/img/cherry-blossom.jpg);
-  background: linear-gradient(rgba(206, 221, 221, 0.8)), url(/img/cherry-blossom.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(#cedddd)), url(/img/cherry-blossom.jpg);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), #cedddd), url(/img/cherry-blossom.jpg);
   background-size: 100%;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
@@ -703,15 +890,31 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__message {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    grid-row: 10 / 11;
+    grid-column: 1 / -1;
+    background-size: 100%;
+  }
+}
+
 .container-main-grid__message:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6))), url(/img/cherry-blossom.jpg);
-  background: linear-gradient(rgba(206, 221, 221, 0.6)), url(/img/cherry-blossom.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/cherry-blossom.jpg);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/cherry-blossom.jpg);
   background-size: 102%;
 }
 
 @media only screen and (max-width: 76rem) {
   .container-main-grid__message:hover {
     background-size: 152%;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__message:hover {
+    background-size: 102%;
   }
 }
 
@@ -722,8 +925,8 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8))), url(/img/header-background-image.jpg);
-  background: linear-gradient(rgba(206, 221, 221, 0.8)), url(/img/header-background-image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8)), to(#cedddd)), url(/img/header-background-image.jpg);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.8), #cedddd), url(/img/header-background-image.jpg);
   background-size: 100%;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
@@ -735,9 +938,20 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__follow {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 1;
+    grid-row: 11 / 12;
+    grid-column: 1 / -1;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
 .container-main-grid__follow:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6))), url(/img/header-background-image.jpg);
-  background: linear-gradient(rgba(206, 221, 221, 0.6)), url(/img/header-background-image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/header-background-image.jpg);
+  background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/header-background-image.jpg);
   background-size: 102%;
 }
 
@@ -747,12 +961,28 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-main-grid__follow:hover {
+    background-size: 102%;
+    background-position: center;
+  }
+}
+
 .container-main-grid__footer {
   -ms-grid-row: 9;
   -ms-grid-row-span: 1;
   grid-row: 9 / 10;
   grid-column: 2 / -1;
   background-color: #d6a5a5;
+}
+
+@media only screen and (max-width: 27em) {
+  .container-main-grid__footer {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 1;
+    grid-row: 12 / 13;
+    grid-column: 1 / -1;
+  }
 }
 
 .container-main-grid__test-carousel {
@@ -810,6 +1040,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 27em) {
+  .container-mini-grid__image {
+    height: 16rem;
+  }
+}
+
 .container-mini-grid__image:hover {
   height: 36.5rem;
   -webkit-box-shadow: none;
@@ -828,14 +1064,33 @@ body {
   }
 }
 
-.container-mini-grid__priceband {
+@media only screen and (max-width: 27em) {
+  .container-mini-grid__image:hover {
+    height: 16.5rem;
+  }
+}
+
+.container-mini-grid__priceband--wedding, .container-mini-grid__priceband--disney, .container-mini-grid__priceband--christening {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
+  color: #ae8787;
 }
 
 @media only screen and (max-width: 60rem) {
-  .container-mini-grid__priceband {
+  .container-mini-grid__priceband--wedding, .container-mini-grid__priceband--disney, .container-mini-grid__priceband--christening {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .container-mini-grid__priceband--wedding--disney, .container-mini-grid__priceband--disney--disney, .container-mini-grid__priceband--christening--disney {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .container-mini-grid__priceband--wedding--wedding, .container-mini-grid__priceband--wedding--christening, .container-mini-grid__priceband--disney--wedding, .container-mini-grid__priceband--disney--christening, .container-mini-grid__priceband--christening--wedding, .container-mini-grid__priceband--christening--christening {
+    display: none;
   }
 }
 

@@ -32,6 +32,10 @@
         height: 22rem;
     }
 
+    @include respond(phone) {
+        height: 16rem;
+    }
+
     &:hover {
         height: 36.5rem;
         box-shadow: none;
@@ -43,15 +47,35 @@
         @include respond(mini-desk) {
             height: 22.5rem;
         }
+
+        @include respond(phone) {
+            height: 16.5rem;
+        }
     }
   }
 
-  &__priceband {
+  &__priceband--wedding,
+  &__priceband--disney,
+  &__priceband--christening {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: $color-primary-dark;
 
     @include respond(mini-desk) {
       font-size: 1.3rem;
+    }
+
+    &--disney {
+        @include respond(phone) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &--wedding,
+    &--christening {
+        @include respond(phone) {
+            display: none;
+        }
     }
   }
 }
