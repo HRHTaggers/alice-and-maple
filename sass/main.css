@@ -830,8 +830,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(#cedddd)), url(/img/christening-candles-light.png);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), #cedddd), url(/img/christening-candles-light.png);
   background-size: 100%;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
+  -webkit-transition: 6s all ease-in-out;
+  transition: 6s all ease-in-out;
 }
 
 @media only screen and (max-width: 76rem) {
@@ -854,18 +854,18 @@ body {
 .container-main-grid__shop:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/christening-candles-light.png);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/christening-candles-light.png);
-  background-size: 102%;
+  background-size: 150%;
 }
 
 @media only screen and (max-width: 76rem) {
   .container-main-grid__shop:hover {
-    background-size: 152%;
+    background-size: 170%;
   }
 }
 
 @media only screen and (max-width: 27em) {
   .container-main-grid__shop:hover {
-    background-size: 102%;
+    background-size: 120%;
     background-position: center;
   }
 }
@@ -880,8 +880,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(#cedddd)), url(/img/cherry-blossom.jpg);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), #cedddd), url(/img/cherry-blossom.jpg);
   background-size: 100%;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
+  -webkit-transition: 6s all ease-in-out;
+  transition: 6s all ease-in-out;
 }
 
 @media only screen and (max-width: 76rem) {
@@ -903,18 +903,18 @@ body {
 .container-main-grid__message:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/cherry-blossom.jpg);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/cherry-blossom.jpg);
-  background-size: 102%;
+  background-size: 120%;
 }
 
 @media only screen and (max-width: 76rem) {
   .container-main-grid__message:hover {
-    background-size: 152%;
+    background-size: 170%;
   }
 }
 
 @media only screen and (max-width: 27em) {
   .container-main-grid__message:hover {
-    background-size: 102%;
+    background-size: 120%;
   }
 }
 
@@ -928,13 +928,13 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.8)), to(#cedddd)), url(/img/header-background-image.jpg);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.8), #cedddd), url(/img/header-background-image.jpg);
   background-size: 100%;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
+  -webkit-transition: 6s all ease-in-out;
+  transition: 6s all ease-in-out;
 }
 
 @media only screen and (max-width: 76rem) {
   .container-main-grid__follow {
-    background-size: 150%;
+    background-size: 170%;
   }
 }
 
@@ -952,7 +952,7 @@ body {
 .container-main-grid__follow:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(206, 221, 221, 0.6)), to(rgba(206, 221, 221, 0.8))), url(/img/header-background-image.jpg);
   background: linear-gradient(to bottom, rgba(206, 221, 221, 0.6), rgba(206, 221, 221, 0.8)), url(/img/header-background-image.jpg);
-  background-size: 102%;
+  background-size: 120%;
 }
 
 @media only screen and (max-width: 76rem) {
@@ -963,7 +963,7 @@ body {
 
 @media only screen and (max-width: 27em) {
   .container-main-grid__follow:hover {
-    background-size: 102%;
+    background-size: 120%;
     background-position: center;
   }
 }
